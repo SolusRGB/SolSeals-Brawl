@@ -1,0 +1,50 @@
+{
+    "name": "bananos-coin-flip",
+    "version": "0.1.0",
+    "author": "Matt Van <mattvan@hey.com>",
+    "repository": "",
+    "files": [
+        "components",
+        "pages",
+        "public",
+        "styles",
+        ".eslintrc.json",
+        "LICENSE",
+        "next.config.js",
+        "next-env.d.ts",
+        "README.md",
+        "tsconfig.json"
+    ],
+    "scripts": {
+        "clean": "shx rm -rf .next",
+        "dev": "next dev",
+        "build": "yarn clean && next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@16bits/nes.css": "^2.3.2",
+        "@solana/wallet-adapter-base": "^0.9.0",
+        "@solana/wallet-adapter-react": "^0.15.0",
+        "@solana/wallet-adapter-react-ui": "^0.9.0",
+        "@solana/wallet-adapter-wallets": "^0.14.0",
+        "@solana/web3.js": "^1.20.0",
+        "bn.js": "^5.2.0",
+        "borsh": "^0.7.0",
+        "date-fns": "^2.28.0",
+        "next": "^11.1.2",
+        "react": "^17.0.2",
+        "react-cookie": "^4.1.1",
+        "react-dialog-polyfill": "^1.0.5",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.24",
+        "eslint": "^7.32.0",
+        "eslint-config-next": "^11.1.2",
+        "mocha": "^9.1.4",
+        "next-transpile-modules": "^8.0.0",
+        "shx": "^0.3.3",
+        "typescript": "~4.4.4"
+    }
+}
