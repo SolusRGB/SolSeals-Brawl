@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { Heading, VStack, HStack, Text, Code } from "@chakra-ui/react";
 
+// const FLIP_PUBLIC_KEY = "EtCvhfpwvaUVD4uh13NaYxtGddDcDkyYXsomtwXGHyB7";
+
 export const Transactions = () => {
   const { connection } = useConnection();
   const { publicKey } = useWallet();

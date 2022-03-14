@@ -35,7 +35,7 @@
         "next": "^11.1.2",
         "react": "^17.0.2",
         "react-cookie": "^4.1.1",
-        "react-dialog-polyfill": "^1.0.5",
+        "react-dialog-polyfill": "^1.0.6",
         "react-dom": "^17.0.2"
     },
     "devDependencies": {

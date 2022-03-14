@@ -1,28 +1,34 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { fromUnixTime, formatRelative } from "date-fns";
+import { useBets, collect } from "../../flip-lib";
 
-const Result = ({ bet, collect }) => {
+const Result = ({ bet }) => {
   const wallet = useWallet();
+
   const isWinner = wallet?.publicKey.toString() == bet.winner.toString();
   const collectEnabled = bet.collected === 0 && isWinner;
   return (
     <tr>
       <td>{isWinner ? "Yes" : "No"}</td>
-      <td className="trim">{isWinner ? bet.loser.toString() : bet.winner.toString()}</td>
+      <td className="trim no-mobile">
+        {isWinner ? bet.loser.toString() : bet.winner.toString()}
+      </td>
       <td>{bet.amount / LAMPORTS_PER_SOL}</td>
-      <td>{formatRelative(fromUnixTime(bet.updated_at), new Date())}</td>
+      <td className="no-mobile">
+        {formatRelative(fromUnixTime(bet.updated_at), new Date())}
+      </td>
       <td>
         {collectEnabled ? (
           <button
             className="nes-btn is-success"
             onClick={() => collect(bet.pubkey)}
           >
-            Collect
+            Get
           </button>
         ) : (
           <button className="nes-btn is-disabled" disabled>
-            Collect
+            Get
           </button>
         )}
       </td>
@@ -30,8 +36,13 @@ const Result = ({ bet, collect }) => {
   );
 };
 
-export const Results = ({ bets, collect }) => {
+export const Results = ({ collect }) => {
   const wallet = useWallet();
+  const bets = useBets();
+  
+  if (!bets || bets.length == 0) {
+    return <></>
+  }
 
   return (
     <div className="nes-container with-title is-centered is-dark is-rounded">
@@ -41,9 +52,9 @@ export const Results = ({ bets, collect }) => {
           <thead>
             <tr>
               <th>Won?</th>
-              <th>Against</th>
+              <th className="no-mobile">Against</th>
               <th>Amount</th>
-              <th>When</th>
+              <th className="no-mobile">When</th>
               <th>Collect</th>
             </tr>
           </thead>

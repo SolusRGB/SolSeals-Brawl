@@ -13,9 +13,11 @@ import { clusterApiUrl } from '@solana/web3.js';
 import { FC, ReactNode, useMemo } from 'react';
 
 export const WalletConnectionProvider: FC<{ children: ReactNode }> = ({ children }) => {
-    // uncomment for Devnet
-    const network = WalletAdapterNetwork.Devnet;
-    const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+    const network = 
+        process.env.NEXT_PUBLIC_NETWORK === "mainnet" ? WalletAdapterNetwork.Mainnet : 
+        process.env.NEXT_PUBLIC_NETWORK === "testnet" ? WalletAdapterNetwork.Testnet :
+        WalletAdapterNetwork.Devnet
+    const endpoint = useMemo(() => process.env.NEXT_PUBLIC_NETWORK == "mainnet" ? process.env.NEXT_PUBLIC_CLUSTER_URL || "https://wild-wispy-meadow.solana-mainnet.quiknode.pro/aaa0d4e9392a33b143293ee971432cdd7f5cfe24/" : clusterApiUrl(network), [network]);
     
     //uncomment for localhost
     // const network = "http://localhost:8899"

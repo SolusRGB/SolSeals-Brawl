@@ -1,18 +1,29 @@
+import { useState, useEffect } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { Dialog } from "react-dialog-polyfill";
 import { winMessages, lossMessages } from "../../scripts";
-import Image from 'next/image';
+import Image from "next/image";
+
+import { useDisplayBet, collect, closeDisplayBet } from "../../flip-lib";
 
 const Message = ({ script }) => {
   const { side, message, icon } = script;
 
+  if (side == "right") {
+    return <></>
+  }
+
   return (
     <section className={`message -${side}`}>
-      {side === "left" && <Image alt="Biker" src={icon} width={100} height={100} layout="fixed" />}
+      {side === "left" && (
+        <Image alt="Biker" src={icon} width={100} height={100} layout="fixed" />
+      )}
       <div className={`nes-balloon from-${side}`}>
         <p>{message}</p>
       </div>
-      {side === "right" && <Image alt="Biker" src={icon} width={100} height={100} layout="fixed" />}
+      {side === "right" && (
+        <Image alt="Biker" src={icon} width={100} height={100} layout="fixed" />
+      )}
     </section>
   );
 };
@@ -46,13 +57,24 @@ const randomScript = (isWinner) => {
   return array[scriptNumber];
 };
 
-export const WinLoss = ({ bet, close, collect }) => {
+export const WinLoss = () => {
   const wallet = useWallet();
+  const [messageTimerDone, setMessageTimerDone] = useState(false);
+
+  const bet = useDisplayBet();
+
+  useEffect(() => {
+    if (!!bet) {
+      setMessageTimerDone(false);
+      setTimeout(() => setMessageTimerDone(true), 14_000);
+    }
+  }, [bet]);
+
   if (!bet) {
     return (
       <Dialog
         open={false}
-        onClose={close}
+        onClose={closeDisplayBet}
         className="nes-dialog is-rounded"
       ></Dialog>
     );
@@ -62,33 +84,51 @@ export const WinLoss = ({ bet, close, collect }) => {
   const messages = randomScript(isWinner);
   const collectEnabled = bet.collected === 0;
 
+  const isVideo = messages.logo.substring(messages.logo.length - 4) === "webm";
+
   return (
-    <Dialog open={true} onClose={close} className="nes-dialog is-rounded">
+    <Dialog open={true} onClose={close} className="nes-dialog is-rounded win-loss">
       <div className="winLossLogo">
-        <Image
-        src={messages.logo}
-        width={200}
-        height={200}
-        layout="fixed"
-        objectFit="cover"
-        objectPosition="center"
-        alt={isWinner ? "You won" : "You lost"}
-      />
+        {!isVideo && (
+          <Image
+            src={messages.logo}
+            width={200}
+            height={200}
+            layout="fixed"
+            objectFit="cover"
+            objectPosition="center"
+            alt={isWinner ? "You won" : "You lost"}
+          />
+        )}
+        {isVideo && (
+          <>
+          <video className="video" autoPlay={true} playsInline={true} muted>
+            <source src={messages.logo} type="video/webm"/>
+            <source src={messages.logo.replace('webm', 'm4v')} type="video/mp4"/>
+          </video>
+          </>
+        )}
       </div>
-      <section className="message-list">
-        {messages.script.map((script) => (
-          <Message key={script.message} script={script} />
-        ))}
-      </section>
-      {isWinner && (
-        <Collect
-          enabled={collectEnabled}
-          pubkey={bet.pubkey}
-          close={close}
-          collect={collect}
-        />
+      {messageTimerDone && (
+        <div>
+          <section className="message-list">
+            {messages.script.map((script) => (
+              <Message key={script.message} script={script} />
+            ))}
+          </section>
+          {isWinner && (
+            <Collect
+              enabled={collectEnabled}
+              pubkey={bet.pubkey}
+              close={closeDisplayBet}
+              collect={() => collect(bet.pubkey)}
+            />
+          )}
+          <button className="nes-btn" onClick={closeDisplayBet}>
+            Close
+          </button>
+        </div>
       )}
-      <button className="nes-btn" onClick={close}>Close</button>
     </Dialog>
   );
 };

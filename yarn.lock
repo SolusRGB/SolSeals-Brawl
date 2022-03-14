@@ -3552,10 +3552,10 @@ react-cookie@^4.1.1:
     hoist-non-react-statics "^3.0.0"
     universal-cookie "^4.0.0"
 
-react-dialog-polyfill@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/react-dialog-polyfill/-/react-dialog-polyfill-1.0.5.tgz#609ee2d9111ab77cfaa310bf20cf32f222066095"
-  integrity sha512-dHjyUAbgv4K0HpVZqEYfkkGPADrsa2qZvKsCIp/xDNcB9aDWeuhMmAF9Rc96Tpn2krNPuiBkOKR4ZNG3tnrC9Q==
+react-dialog-polyfill@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-dialog-polyfill/-/react-dialog-polyfill-1.0.6.tgz#705cc44c932a77b9263cd48eccb372feee2060c3"
+  integrity sha512-SZFWdY8r3saIZ3mcdzMJreP+g14VOPrOD01PDZMECU4E6OODn7LGw96fCnp8EWw6TQFkq9TMTI7z3i/EEYm/hA==
   dependencies:
     dialog-polyfill "^0.5.6"
 
