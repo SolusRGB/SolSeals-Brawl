@@ -23,7 +23,7 @@ const collect = async (betPubkey, { wallet, connection, programId }) => {
     connection
   );
   const signature = await signAndSendTransaction(trans, wallet, connection);
-  const result = await connection.confirmTransaction(signature);
+  await connection.confirmTransaction(signature);
 };
 
 export default collect;

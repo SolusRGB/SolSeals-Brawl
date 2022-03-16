@@ -7,7 +7,7 @@ import {
   initFlip,
 } from ".";
 
-const FlipInitliazer = () => {
+const FlipInitializer = () => {
   //todo: connection and wallet should be params
   const { connection } = useConnection();
   const wallet = useWallet();
@@ -29,9 +29,10 @@ const FlipInitliazer = () => {
         updatePendingBets();
       }, 10_000);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wallet?.publicKey]);
 
   return <></>;
 };
 
-export default FlipInitliazer;
+export default FlipInitializer;

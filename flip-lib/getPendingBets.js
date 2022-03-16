@@ -1,5 +1,5 @@
 import { PublicKey } from "@solana/web3.js";
-import { deserialize, serialize } from "borsh";
+import { deserialize } from "borsh";
 import { Wager } from "./classes/Wager";
 import BN from "bn.js";
 
@@ -23,7 +23,7 @@ const getPendingBets = async ({connection, programId}) => {
   }, []);
 
   const sortedPending = pendingBets.sort((a, b) => {
-    a.updated_at.lt(b.updated_at) ? 1 : -1;
+    return a.updated_at.lt(b.updated_at) ? 1 : -1;
   });
 
     return sortedPending;

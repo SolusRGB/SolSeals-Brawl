@@ -13,11 +13,10 @@ import {
   signAndSendTransaction,
 } from "./helpers/transactions";
 
-const oracle = new PublicKey(process.env.NEXT_PUBLIC_ORACLE_ID);
 const fee = new PublicKey("BztEHBnWKkHGhejpszVPL6zrTBKo5ELR42x1URK5fVh1");
 
 const createBet = async (amount, state) => {
-  const { connection, wallet, pendingBets, programId, partnerId } = state;
+  const { connection, wallet, pendingBets, programId, partnerId, oracleId } = state;
   const generateBets = async () => {
     const bet = new Bet({
       type: 1,
@@ -91,8 +90,6 @@ const createBet = async (amount, state) => {
   const { betAccount, createBetAccount } = await generateBets();
   const { wagerAccount, createWagerAccount } = await generateWagers(amount);
 
-  console.log('partnerId', partnerId);
-
   const betTransaction = new TransactionInstruction({
     keys: [
       { pubkey: wallet.publicKey, isSigner: true }, //
@@ -100,7 +97,7 @@ const createBet = async (amount, state) => {
       { pubkey: wagerAccount, isSigner: false, isWritable: true },
       { pubkey: fee, isSigner: false, isWritable: true },
       ...(partnerId !== '' ? [{ pubkey: partnerId, isSigner: false, isWritable: true }] : []),
-      { pubkey: oracle, isSigner: false, isWritable: false },
+      { pubkey: oracleId, isSigner: false, isWritable: false },
       getPendingBet(pendingBets, wallet, 0, amount),
       getPendingBet(pendingBets, wallet, 1, amount),
       getPendingBet(pendingBets, wallet, 2, amount),
@@ -122,7 +119,7 @@ const createBet = async (amount, state) => {
     connection
   );
     const signature = await signAndSendTransaction(trans, wallet, connection);
-    const result = await connection.confirmTransaction(signature);
+    await connection.confirmTransaction(signature);
 };
 
 export default createBet;

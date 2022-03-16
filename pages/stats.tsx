@@ -29,7 +29,7 @@ const Index: NextPage = () => {
         />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      <FlipProvider partnerId="">
+      <FlipProvider partnerId="" network={process.env.NEXT_PUBLIC_NETWORK}>
         <Header />
       </FlipProvider>
 

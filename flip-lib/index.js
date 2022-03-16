@@ -14,7 +14,8 @@ const defaultState = {
   bets: [],
   pendingBets: [],
   balance: 0.0,
-  programId: new PublicKey(process.env.NEXT_PUBLIC_PROGRAM_ID), //todo: we should probably hardcode
+  // programId: new PublicKey("E23xuZVzpEGKjiRtFjiT1BC1N3MqvZuvULXVi44uEKnN"), //todo: we should probably hardcode
+  programId: new PublicKey("CvKsiUR1whgHxpj7C2ySuvwfmKDzjFvEkHP54thJjE3v"),
   partnerId: "",
   displayBet: undefined,
   error: undefined,
@@ -54,7 +55,7 @@ function flipReducer(state, action) {
     }
     case "setDisplayBet": {
       const displayBet = action.displayBet;
-      if (!!state.displayBet) {
+      if (!!state.displayBet && !!action.displayBet) {
         //only allow one display bet per
         return state;
       }
@@ -78,10 +79,18 @@ function flipReducer(state, action) {
   }
 }
 
-function FlipProvider({ children, partnerId }) {
+function FlipProvider({ children, partnerId, network }) {
+  const oracleId =
+    network === "mainnet"
+      ? new PublicKey("H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG")
+      : network === "testnet"
+      ? new PublicKey("7VJsBtJzgTftYzEeooSDYyjKXvYRWJHdwvbwfBvTg9K")
+      : new PublicKey("J83w4HKfqxwcq3BEMMkPFSppX3gqekLyLJBexebFVkix");
+
   const [_state, _dispatch] = React.useReducer(flipReducer, {
     ...defaultState,
-    partnerId,
+    partnerId: new PublicKey(partnerId),
+    oracleId,
   });
   state = _state;
   dispatch = _dispatch;
