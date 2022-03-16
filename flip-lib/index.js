@@ -15,7 +15,7 @@ const defaultState = {
   pendingBets: [],
   balance: 0.0,
   // programId: new PublicKey("E23xuZVzpEGKjiRtFjiT1BC1N3MqvZuvULXVi44uEKnN"), //todo: we should probably hardcode
-  programId: new PublicKey("CvKsiUR1whgHxpj7C2ySuvwfmKDzjFvEkHP54thJjE3v"),
+  programId: new PublicKey("E23xuZVzpEGKjiRtFjiT1BC1N3MqvZuvULXVi44uEKnN"),
   partnerId: "",
   displayBet: undefined,
   error: undefined,
