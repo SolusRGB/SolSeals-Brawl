@@ -99,7 +99,7 @@ const createBet = async (amount, state) => {
       { pubkey: betAccount, isSigner: false, isWritable: true },
       { pubkey: wagerAccount, isSigner: false, isWritable: true },
       { pubkey: fee, isSigner: false, isWritable: true },
-      ...(partnerId !== '' ? [{ pubkey: partner, isSigner: false, isWritable: true }] : []),
+      ...(partnerId !== '' ? [{ pubkey: partnerId, isSigner: false, isWritable: true }] : []),
       { pubkey: oracle, isSigner: false, isWritable: false },
       getPendingBet(pendingBets, wallet, 0, amount),
       getPendingBet(pendingBets, wallet, 1, amount),
