@@ -65,7 +65,7 @@ export const BetBox = () => {
   );
 
   return (
-    <div className="nes-container with-title is-centered is-rounded is-dark">
+    <div className="nes-container with-title is-centered is-rounded">
       <p className="title">Bet</p>
       <p>
         Pick an amount and bet. BANANOS MC Gang takes a 2% cut of the bet. You

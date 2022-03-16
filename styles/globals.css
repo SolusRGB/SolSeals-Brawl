@@ -4,11 +4,12 @@
 body {
   padding: 0 2rem;
   margin: 0 2rem;
+  background-image: url("../public/images/Background/background.jpg");
+  background-position: center;
 }
 
 html,
 body {
-  background-color: #212529;
   color: #fff;
   font-family: "Press Start 2P";
   padding: 0;
@@ -26,10 +27,25 @@ samp {
   font-family: "Press Start 2P";
 }
 
+p {
+  color: #22e4ca;
+}
+
 #bananos > .container {
   max-width: 980px;
   margin: 0 auto;
   margin-top: 100px;
+}
+
+/* Nes containers that hold content */
+.nes-container {
+  background-color: #113c5a65;
+  margin-bottom: 1px;
+}
+
+.nes-container.is-centered.is-rounded {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 /* Header */
