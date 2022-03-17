@@ -48,9 +48,31 @@ p {
   margin-top: 15px;
 }
 
+
 /** Buttons */
 
 /* SOL bet buttons */
+
+.nes-btn.is-success {
+  color: #000;
+  background-color: #ffd311;
+}
+.nes-btn.is-success::after {
+  box-shadow: inset -4px -4px #aa7a00;
+}
+.nes-btn.is-success:hover {
+  color: #000;
+  background-color: #ffb700;;
+}
+.nes-btn.is-success:hover::after {
+  box-shadow: inset -6px -6px #ebb320;
+}
+.nes-btn.is-success:focus {
+  box-shadow: 0 0 0 6px rgba(255, 230, 0, 0.3);
+}
+.nes-btn.is-success:active:not(.is-disabled)::after {
+  box-shadow: inset 4px 4px #aa7a00;
+}
 
 p.title {
   color: rgb(255, 255, 255);
