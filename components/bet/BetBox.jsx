@@ -68,8 +68,8 @@ export const BetBox = () => {
     <div className="nes-container with-title is-centered is-rounded">
       <p className="title">Bet</p>
       <p>
-        Pick an amount and bet. BANANOS MC Gang takes a 2% cut of the bet. You
-        will be matched up with the next person who bets that amount
+        Pick an amount and bet. SolSeals will take a 2% cut of the bet. You
+        will be matched up with the next person who bets that amount.
       </p>
       <div>
         <div onChange={(e) => setBetAmount(e.target.value)}>

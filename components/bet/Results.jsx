@@ -45,10 +45,10 @@ export const Results = ({ collect }) => {
   }
 
   return (
-    <div className="nes-container with-title is-centered is-dark is-rounded">
+    <div className="nes-container with-title is-centered is-rounded">
       <p className="title">Your results</p>
       <div className="nes-table-responsive">
-        <table className="nes-table is-dark is-wide">
+        <table className="nes-table is-wide">
           <thead>
             <tr>
               <th>Won?</th>

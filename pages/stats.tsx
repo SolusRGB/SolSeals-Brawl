@@ -8,7 +8,7 @@ const Index: NextPage = () => {
   return (
     <div id="bananos">
       <Head>
-        <title>ROAD RUGGER BY BANANOS MC</title>
+        <title>PvP Casino By SolSeals</title>
         <meta name="description" content="Race if you dare" />
         <link
           rel="apple-touch-icon"

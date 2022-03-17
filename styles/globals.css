@@ -48,6 +48,84 @@ p {
   margin-top: 15px;
 }
 
+/* SOL Button */
+.nes-btn.is-warning {
+  color: #000000;
+  background-color: #69ffe1;
+}
+
+.nes-btn.is-warning:hover {
+  color: #212529;
+  background-color: #5ee6ca;
+}
+
+.nes-btn.is-warning::after {
+  box-shadow: inset -4px -4px #43a390;
+}
+
+.nes-btn.is-warning:hover::after {
+  box-shadow: inset -6px -6px #43a390;
+}
+
+.nes-btn.is-warning:focus {
+  box-shadow: 0 0 0 6px rgba(74, 165, 46, 0.3);
+}
+
+.nes-btn.is-warning:active:not(.is-disabled)::after {
+  box-shadow: inset 4px 4px #69ffe1;
+}
+
+/* Wallet Button */
+
+.nes-btn.is-primary {
+  color: #fff;
+  background-color: #5d52f5;
+}
+
+.nes-btn.is-primary::after {
+  box-shadow: inset -4px -4px #433baf
+}
+
+.nes-btn.is-primary:hover {
+  color: #fff;
+  background-color: #594fe6;
+}
+
+.nes-btn.is-primary:hover::after {
+  box-shadow: inset -6px -6px #433baf;
+}
+
+.nes-btn.is-primary:focus {
+  box-shadow: 0 0 0 6px rgba(116, 64, 212, 0.3);
+}
+
+.nes-btn.is-primary:active:not(.is-disabled)::after {
+  box-shadow: inset 4px 4px #695efa;
+}
+
+
+/* Bet Button */
+.nes-btn.is-success {
+  color: #000;
+  background-color: #69ffe1;
+}
+.nes-btn.is-success::after {
+  box-shadow: inset -4px -4px #43a390;
+}
+.nes-btn.is-success:hover {
+  color: #000;
+  background-color: #5ee6ca;
+}
+.nes-btn.is-success:hover::after {
+  box-shadow: inset -6px -6px #43a390;
+}
+.nes-btn.is-success:focus {
+  box-shadow: 0 0 0 6px rgba(74, 165, 46, 0.3);
+}
+.nes-btn.is-success:active:not(.is-disabled)::after {
+  box-shadow: inset 4px 4px #69ffe1;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -55,8 +133,8 @@ header {
   left: 0;
   right: 0;
   z-index: 9;
-  border-bottom: 4px solid #d3d3d32a;
-  background-color: #212529;
+  border-bottom: 3.5px solid #000000;
+  background-color: #113c5a;
   color: #fff;
 }
 
@@ -105,7 +183,7 @@ header.sticky .nav-brand p {
 
 /* Main */
 .main-content {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem;  /*! 2rem on v1 need to test how it looks */
 }
 
 /* Footer */
@@ -168,6 +246,20 @@ section.showcase > section.samplecode > pre code {
 .item.containers > .nes-container {
   display: inline-block;
   max-width: 400px;
+}
+
+/* Dialogue boxes */
+.nes-balloon {
+  background: #113c5aaf;
+}
+
+/* Table (your results) */
+.nes-table {
+  background-color: transparent; /*removed background on table*/
+}
+.table-overflow {
+  max-height: 400px;
+  overflow: scroll;
 }
 
 /* Balloons sample */
