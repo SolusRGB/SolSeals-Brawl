@@ -14,7 +14,6 @@ const defaultState = {
   bets: [],
   pendingBets: [],
   balance: 0.0,
-  // programId: new PublicKey("E23xuZVzpEGKjiRtFjiT1BC1N3MqvZuvULXVi44uEKnN"), //todo: we should probably hardcode
   programId: new PublicKey("E23xuZVzpEGKjiRtFjiT1BC1N3MqvZuvULXVi44uEKnN"),
   partnerId: "",
   displayBet: undefined,
@@ -80,12 +79,15 @@ function flipReducer(state, action) {
 }
 
 function FlipProvider({ children, partnerId, network }) {
+  console.log('network', network);
   const oracleId =
-    network === "mainnet"
+    network === "mainnet-beta"
       ? new PublicKey("H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG")
       : network === "testnet"
       ? new PublicKey("7VJsBtJzgTftYzEeooSDYyjKXvYRWJHdwvbwfBvTg9K")
       : new PublicKey("J83w4HKfqxwcq3BEMMkPFSppX3gqekLyLJBexebFVkix");
+
+      console.log('oracleId', oracleId.toBase58())
 
   const [_state, _dispatch] = React.useReducer(flipReducer, {
     ...defaultState,

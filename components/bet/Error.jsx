@@ -25,7 +25,6 @@ export const Error = () => {
   if (!type) {
     return <></>
   }
-  console.log('type is', type);
   const error = errors[type];
   return (
     <Dialog
