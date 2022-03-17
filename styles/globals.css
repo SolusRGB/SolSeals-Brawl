@@ -28,7 +28,7 @@ samp {
 }
 
 p {
-  color: #22e4ca;
+  color: #ffffff;
 }
 
 #bananos > .container {
@@ -46,6 +46,23 @@ p {
 .nes-container.is-centered.is-rounded {
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+/** Buttons */
+
+/* SOL bet buttons */
+
+p.title {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+.bet {
+  color: #fff;
+  border: rgb(0, 0, 0) 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #113c5ab6;  
 }
 
 /* SOL Button */
@@ -105,24 +122,24 @@ p {
 
 
 /* Bet Button */
-.nes-btn.is-success {
+button.nes-btn.false {
   color: #000;
   background-color: #69ffe1;
 }
-.nes-btn.is-success::after {
+button.nes-btn.false::after {
   box-shadow: inset -4px -4px #43a390;
 }
-.nes-btn.is-success:hover {
+button.nes-btn.false:hover {
   color: #000;
-  background-color: #5ee6ca;
+  background-color: #6de6cd;
 }
-.nes-btn.is-success:hover::after {
-  box-shadow: inset -6px -6px #43a390;
+button.nes-btn.false:hover::after {
+  box-shadow: inset -6px -6px #58d1b9;
 }
-.nes-btn.is-success:focus {
+button.nes-btn.false:focus {
   box-shadow: 0 0 0 6px rgba(74, 165, 46, 0.3);
 }
-.nes-btn.is-success:active:not(.is-disabled)::after {
+button.nes-btn.false:active:not(.is-disabled)::after {
   box-shadow: inset 4px 4px #69ffe1;
 }
 
@@ -183,7 +200,7 @@ header.sticky .nav-brand p {
 
 /* Main */
 .main-content {
-  margin-bottom: 4rem;  /*! 2rem on v1 need to test how it looks */
+  margin-bottom: 2rem; 
 }
 
 /* Footer */
@@ -250,16 +267,18 @@ section.showcase > section.samplecode > pre code {
 
 /* Dialogue boxes */
 .nes-balloon {
-  background: #113c5aaf;
+  background: #113c5ab9;
 }
 
 /* Table (your results) */
 .nes-table {
   background-color: transparent; /*removed background on table*/
 }
-.table-overflow {
-  max-height: 400px;
-  overflow: scroll;
+
+.nes-table-responsive.results-box {
+  max-height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Balloons sample */
@@ -624,9 +643,10 @@ img.lazy {
 
 .bet {
   color: #fff;
-  border: #ccc 2px solid;
-  border-radius: 2px;
+  border: rgb(0, 0, 0) 2px solid;
+  border-radius: 5px;
   padding: 5px;
+  background-color: #113c5ab6;  
 }
 
 .instant {
@@ -634,10 +654,10 @@ img.lazy {
   align-items: center;
   justify-content: center;
   /* width: 2.7em; */
-  font-size: 0.5em;
-  color: #fff;
+  font-size: 0.54em;
+  color: rgb(255, 255, 255);
   text-align: center;
-  background-color: #92cc41;
+  background-color: #007bff;
   position: absolute;
   top: -1em;
   right: -1em;
@@ -648,4 +668,9 @@ img.lazy {
   display: block;
   background: #fff;
   color: #000;
+}
+
+.nes-container.with-title.is-centered.is-rounded p.title {
+  background-color: #113c5a;
+  border-radius: 10px;
 }

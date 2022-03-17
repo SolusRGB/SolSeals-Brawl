@@ -47,7 +47,7 @@ export const Results = ({ collect }) => {
   return (
     <div className="nes-container with-title is-centered is-rounded">
       <p className="title">Your results</p>
-      <div className="nes-table-responsive">
+      <div className="nes-table-responsive results-box">
         <table className="nes-table is-wide">
           <thead>
             <tr>

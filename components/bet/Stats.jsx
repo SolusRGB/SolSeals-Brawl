@@ -38,7 +38,7 @@ export const Stats = () => {
   return (
     <div className="nes-container with-title is-centered is-rounded">
       <p className="title">Your stats</p>
-      <div className="nes-table-responsive">
+      <div className="nes-table-responsive-is-stats">
         Streak: {streak}<br/>
         Bets: {total}<br/>
         Wins: {wins}<br />
