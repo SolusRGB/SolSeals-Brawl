@@ -11,9 +11,9 @@ export const Header = () => {
           <h1>
             <Image
               className="brand-logo"
-              alt="Road Rugger"
-              src="/images/logo.png"
-              width={300}
+              alt="SolSeals Casino"
+              src="/casino_logo.png"
+              width={200}
               height={50}
               layout="fixed"
             />
