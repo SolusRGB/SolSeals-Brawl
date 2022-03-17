@@ -200,7 +200,8 @@ header.sticky .nav-brand p {
 
 /* Main */
 .main-content {
-  margin-bottom: 2rem; 
+  margin-bottom: 5rem; 
+  margin-top: 130px;
 }
 
 /* Footer */

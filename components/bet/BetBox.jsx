@@ -68,7 +68,7 @@ export const BetBox = () => {
     <div className="nes-container with-title is-centered is-rounded">
       <p className="title">Bet</p>
       <p>
-        Pick an amount and bet. SolSeals will take a 2% cut of the bet. You
+        Pick an amount and bet. SolSeals will take a 3% cut of the bet. You
         will be matched up with the next person who bets that amount.
       </p>
       <div>
