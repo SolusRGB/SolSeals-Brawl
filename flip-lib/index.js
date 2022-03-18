@@ -16,7 +16,7 @@ const defaultState = {
   balance: 0.0,
   // programId: new PublicKey("E23xuZVzpEGKjiRtFjiT1BC1N3MqvZuvULXVi44uEKnN"), //todo: we should probably hardcode
   programId: new PublicKey("E23xuZVzpEGKjiRtFjiT1BC1N3MqvZuvULXVi44uEKnN"),
-  partnerId: "",
+  partnerId: "5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5",
   displayBet: undefined,
   error: undefined,
   loading: false,

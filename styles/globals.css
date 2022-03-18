@@ -293,16 +293,26 @@ section.showcase > section.samplecode > pre code {
   background: #113c5ab9;
 }
 
-/* Table (your results) */
+/** Table (your results) */
 .nes-table {
   background-color: transparent; /*removed background on table*/
 }
 
+/** Results box */
 .nes-table-responsive.results-box {
   max-height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+/** pending bets box */
+.nes-table-responsive.pending-box {
+  max-height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
 
 /* Balloons sample */
 section.message-list {

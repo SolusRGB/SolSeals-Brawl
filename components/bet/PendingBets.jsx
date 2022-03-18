@@ -30,8 +30,8 @@ export const PendingBets = ({ bets = [] }) => {
     <div className="nes-container with-title is-centered is-rounded">
       <p className="title">Your pending bets</p>
       These are bets that are waiting for another person to bet.
-      <div className="nes-table-responsive">
-        <table className="nes-table is-dark is-wide">
+      <div className="nes-table-responsive pending-box">
+        <table className="nes-table is-wide">
           <thead>
             <tr>
               <th>Amount</th>
