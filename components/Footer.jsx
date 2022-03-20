@@ -1,11 +1,14 @@
+import Link from 'next/link'
+
 export const Footer = () => {
   return (
     <footer>
       <nav>
         <div className="footer-nav">
-          <a>How To Play |</a>
-          <a>FAQ |</a>
-          <a>Bug Report</a>
+          <Link href="/how-to-play"><a>How To Play <span>|</span></a></Link>
+          <Link href="/faq"><a>FAQ <span>|</span></a></Link>
+          <Link href="/"><a>Home <span>|</span></a></Link>
+          <Link href="/bugreport"><a>Bug Report</a></Link>
         </div>
       </nav>
       <div className="social-icons">
