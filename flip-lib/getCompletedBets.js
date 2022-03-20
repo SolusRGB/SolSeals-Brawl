@@ -61,7 +61,7 @@ const getCompletedBets = async ({ connection, wallet, programId }) => {
   const sortedCompleted = completedBets.sort((a, b) =>
     a.updated_at.lt(b.updated_at) ? 1 : -1
   );
-  
+
   return sortedCompleted;
 };
 

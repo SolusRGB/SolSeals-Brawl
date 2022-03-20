@@ -4,7 +4,7 @@ import { Wager } from "./classes/Wager";
 import BN from "bn.js";
 
 // Gets all pending bets from platform
-const getPendingBets = async ({connection, programId}) => {
+const getPendingBets = async ({ connection, programId }) => {
   const accounts = await connection.getProgramAccounts(programId, {
     filters: [{ dataSize: 81 }],
   });
@@ -26,7 +26,7 @@ const getPendingBets = async ({connection, programId}) => {
     return a.updated_at.lt(b.updated_at) ? 1 : -1;
   });
 
-    return sortedPending;
+  return sortedPending;
 };
 
 export default getPendingBets;

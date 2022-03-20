@@ -1,11 +1,6 @@
 import { useEffect } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import {
-  updateBets,
-  updatePendingBets,
-  getBalance,
-  initFlip,
-} from ".";
+import { updateBets, updatePendingBets, getBalance, initFlip } from ".";
 
 const FlipInitializer = () => {
   //todo: connection and wallet should be params
@@ -29,7 +24,7 @@ const FlipInitializer = () => {
         updatePendingBets();
       }, 10_000);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wallet?.publicKey]);
 
   return <></>;
