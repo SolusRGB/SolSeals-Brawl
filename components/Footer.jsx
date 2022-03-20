@@ -5,10 +5,10 @@ export const Footer = () => {
     <footer>
       <nav>
         <div className="footer-nav">
-          <Link href="/how-to-play"><a>How To Play <span>|</span></a></Link>
-          <Link href="/faq"><a>FAQ <span>|</span></a></Link>
-          <Link href="/"><a>Home <span>|</span></a></Link>
-          <Link href="/bugreport"><a>Bug Report</a></Link>
+          <Link href="/how-to-play"><a className="nes-btn false footer">How To Play</a></Link>
+          <Link href="/faq"><a className="nes-btn false footer">FAQ</a></Link>
+          <Link href="/"><a className="nes-btn false footer">Home</a></Link>
+          <Link href="/bugreport"><a className="nes-btn false footer">Bug Report</a></Link>
         </div>
       </nav>
       <div className="social-icons">

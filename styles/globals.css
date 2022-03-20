@@ -165,6 +165,28 @@ button.nes-btn.false:active:not(.is-disabled)::after {
   box-shadow: inset 4px 4px #69ffe1;
 }
 
+/* Footer buttons */
+a.nes-btn.false.footer {
+  color: #000;
+  background-color: #69ffe1;
+}
+a.nes-btn.false.footer::after {
+box-shadow: inset -4px -4px #43a390;
+}
+a.nes-btn.false.footer:hover {
+  color: #000;
+  background-color: #6de6cd;
+}
+a.nes-btn.false.footer:hover::after {
+  box-shadow: inset -6px -6px #58d1b9;
+}
+a.nes-btn.false.footer:focus {
+  box-shadow: 0 0 0 6px rgba(74, 165, 46, 0.3);
+}
+a.nes-btn.false.footer:active:not(.is-disabled)::after {
+  box-shadow: inset 4px 4px #69ffe1;
+}
+
 /* Header */
 header {
   position: fixed;
