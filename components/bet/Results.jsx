@@ -39,9 +39,9 @@ const Result = ({ bet }) => {
 export const Results = ({ collect }) => {
   const wallet = useWallet();
   const bets = useBets();
-  
+
   if (!bets || bets.length == 0) {
-    return <></>
+    return <></>;
   }
 
   return (

@@ -23,7 +23,7 @@ export const PendingBets = ({ bets = [] }) => {
   );
 
   if (myPendingBets.length === 0) {
-    return <></>
+    return <></>;
   }
 
   return (

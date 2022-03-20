@@ -10,7 +10,7 @@ const Message = ({ script }) => {
   const { side, message, icon } = script;
 
   if (side == "right") {
-    return <></>
+    return <></>;
   }
 
   return (
@@ -87,7 +87,11 @@ export const WinLoss = () => {
   const isVideo = messages.logo.substring(messages.logo.length - 4) === "webm";
 
   return (
-    <Dialog open={true} onClose={close} className="nes-dialog is-rounded win-loss">
+    <Dialog
+      open={true}
+      onClose={close}
+      className="nes-dialog is-rounded win-loss"
+    >
       <div className="winLossLogo">
         {!isVideo && (
           <Image
@@ -102,10 +106,13 @@ export const WinLoss = () => {
         )}
         {isVideo && (
           <>
-          <video className="video" autoPlay={true} playsInline={true} muted>
-            <source src={messages.logo} type="video/webm"/>
-            <source src={messages.logo.replace('webm', 'm4v')} type="video/mp4"/>
-          </video>
+            <video className="video" autoPlay={true} playsInline={true} muted>
+              <source src={messages.logo} type="video/webm" />
+              <source
+                src={messages.logo.replace("webm", "m4v")}
+                type="video/mp4"
+              />
+            </video>
           </>
         )}
       </div>
