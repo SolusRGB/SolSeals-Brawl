@@ -8,7 +8,7 @@ const Index: NextPage = () => {
   return (
     <div id="bananos">
       <Head>
-        <title>PvP Casino By SolSeals</title>
+        <title>PvP Brawl By SolSeals</title>
         <meta name="description" content="Test Your Luck with the player vs player coin-flip game. Send your seal to battle to find out who is the ultimate seal fighter!"/>
         <link
           rel="apple-touch-icon"
