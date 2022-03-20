@@ -92,12 +92,12 @@ export const Stats = () => {
               ).length;
               const totalWl = bets.reduce((total, bet) => {
                 if (bet.winner.toString() === key) {
-                  total += ( bet.amount.toNumber() / LAMPORTS_PER_SOL);
+                  total += bet.amount.toNumber() / LAMPORTS_PER_SOL;
                 } else {
-                  total -= (bet.amount.toNumber() / LAMPORTS_PER_SOL);
+                  total -= bet.amount.toNumber() / LAMPORTS_PER_SOL;
                 }
                 return total;
-              }, 0)
+              }, 0);
               const losses = total - wins;
 
               return (

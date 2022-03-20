@@ -16,7 +16,8 @@ export const Header = () => {
               width={200}
               height={50}
               layout="fixed"
-              priority lazy
+              priority
+              lazy
             />
           </h1>
           {process.env.NEXT_PUBLIC_NETWORK !== "mainnet" && (
