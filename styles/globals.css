@@ -6,6 +6,7 @@ body {
   margin: 0 2rem;
   background-image: url("../public/images/Background/background.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 html,
@@ -46,6 +47,10 @@ p {
 .nes-container.is-centered.is-rounded {
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+.nes-container-with-title-is-centered-is-rounded-is-faq {
+  margin: auto;
 }
 
 
