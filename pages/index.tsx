@@ -30,7 +30,10 @@ const Index: NextPage = () => {
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       {/*Add partner Id wallet here */}
-      <FlipProvider partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5" network={process.env.NEXT_PUBLIC_NETWORK}>
+      <FlipProvider
+        partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
+        network={process.env.NEXT_PUBLIC_NETWORK}
+      >
         <Header />
 
         <div className="container">

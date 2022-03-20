@@ -53,7 +53,6 @@ p {
   margin: auto;
 }
 
-
 /** Buttons */
 
 /* Solana bet buttons with numbers */
@@ -76,7 +75,7 @@ p {
 }
 .nes-btn.is-success:hover {
   color: #000;
-  background-color: #ffb700;;
+  background-color: #ffb700;
 }
 .nes-btn.is-success:hover::after {
   box-shadow: inset -6px -6px #ebb320;
@@ -128,7 +127,7 @@ p.title {
 }
 
 .nes-btn.is-primary::after {
-  box-shadow: inset -4px -4px #433baf
+  box-shadow: inset -4px -4px #433baf;
 }
 
 .nes-btn.is-primary:hover {
@@ -147,7 +146,6 @@ p.title {
 .nes-btn.is-primary:active:not(.is-disabled)::after {
   box-shadow: inset 4px 4px #695efa;
 }
-
 
 /* Bet Button */
 button.nes-btn.false {
@@ -177,7 +175,7 @@ a.nes-btn.false.footer {
   background-color: #69ffe1;
 }
 a.nes-btn.false.footer::after {
-box-shadow: inset -4px -4px #43a390;
+  box-shadow: inset -4px -4px #43a390;
 }
 a.nes-btn.false.footer:hover {
   color: #000;
@@ -228,7 +226,6 @@ header > .container > .social-button {
   margin-right: 1rem;
 }
 
-
 .nav-brand > a {
   color: #fff;
   text-decoration: none;
@@ -255,7 +252,7 @@ header.sticky .nav-brand p {
 
 /* Main */
 .main-content {
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
   margin-top: 130px;
 }
 
@@ -348,8 +345,6 @@ section.showcase > section.samplecode > pre code {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
-
 
 /* Balloons sample */
 section.message-list {
@@ -709,7 +704,7 @@ img.lazy {
       11px 16px 0 0.02em, 12px 16px 0 0.02em, 13px 16px 0 0.02em,
       14px 16px 0 0.02em, 15px 16px 0 0.02em;
   }
-} 
+}
 
 .instant {
   display: flex;
