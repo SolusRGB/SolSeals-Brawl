@@ -56,6 +56,15 @@ p {
 
 /** Buttons */
 
+/* Solana bet buttons with numbers */
+.bet {
+  color: rgb(0, 0, 0) !important;
+  border: rgb(0, 0, 0) 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffd311;
+}
+
 /* SOL bet buttons */
 
 .nes-btn.is-success {
@@ -82,14 +91,6 @@ p {
 p.title {
   color: rgb(255, 255, 255);
   background-color: transparent;
-}
-
-.bet {
-  color: #fff;
-  border: rgb(0, 0, 0) 2px solid;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #113c5ab6;  
 }
 
 /* SOL Button */
@@ -220,9 +221,14 @@ header > .container > .social-button {
   margin-left: auto;
 }
 
+.nav-brand {
+  margin-top: 8px;
+}
 .nav-brand .brand-logo {
   margin-right: 1rem;
 }
+
+
 .nav-brand > a {
   color: #fff;
   text-decoration: none;
@@ -266,7 +272,6 @@ footer a {
 
 footer nav {
   margin-bottom: 20px;
-  padding: 10px;
 }
 
 h2 > a {
@@ -706,15 +711,6 @@ img.lazy {
   }
 } 
 
-.bet {
-  color: #fff;
-  border: rgb(0, 0, 0) 2px solid;
-  border-radius: 5px;
-  padding: 5px;
-  /* background-color: #113c5ab6;   */
-  background-color: rgb(255, 183, 0);
-}
-
 .instant {
   display: flex;
   align-items: center;
@@ -739,4 +735,14 @@ img.lazy {
 .nes-container.with-title.is-centered.is-rounded p.title {
   background-color: #113c5a;
   border-radius: 10px;
+}
+
+.not-found {
+  text-align: center;
+  margin: auto;
+}
+
+.not-found a {
+  color: #113c5a;
+  text-decoration: underline;
 }

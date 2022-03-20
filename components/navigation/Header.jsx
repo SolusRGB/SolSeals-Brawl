@@ -2,7 +2,6 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { Balance } from "./Balance";
 import { Loading } from "./Loading";
 import Image from "next/image";
-import Link from "next/link"
 
 export const Header = () => {
   return (
@@ -13,7 +12,7 @@ export const Header = () => {
             <Image
               className="brand-logo"
               alt="SolSeals Casino"
-              src="/casino_logo.png"
+              src="/pvp-brawl-logo.png"
               width={200}
               height={50}
               layout="fixed"

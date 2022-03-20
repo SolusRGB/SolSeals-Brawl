@@ -13,6 +13,7 @@ export const Faq = () => {
               layout="fixed"
             />
           </h1>
+          <div className="faq">
             <h2 className="faq-title">FAQ</h2>
             <section className="trust">
                 <h3>How can I trust the brawl game?</h3>
@@ -22,7 +23,8 @@ export const Faq = () => {
 
                     </p>
             </section>
-            <section className="instant-results">
+            <div className="instant-results">
+            <section>
                 <h3>Why are my results not always instant?</h3>
                     <p>Our brawl is PvP meaning that you are playing against another real player. Therefore, if you place a bet and no one else has placed one for the same amount as you, you will be placed into a queue until you find a match. 
 
@@ -40,6 +42,8 @@ export const Faq = () => {
                     <p>Only ever bet with Sol you can afford to lose. If you feel that you can not stop yourself from using the casino please reach out to any member of our team and we will blacklist your wallet for you.</p>
                     <span className="help-link">Gambling Helpline: <a href="https://www.ncpgambling.org/chat/">ncpgambling.org/chat</a></span>
             </section>
+            </div>
+            </div>
         </div>
     );
 }
