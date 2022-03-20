@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export const NotFound = () => {
     return(
+
     <div className="not-found">
         <Image
               className="faq-icon"

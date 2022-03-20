@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export const Faq = () => {
     return (
         <div className="nes-container with-title is-centered is-rounded is-faq">
