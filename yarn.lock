@@ -320,6 +320,14 @@
     bs58 "^4.0.1"
     eventemitter3 "^4.0.7"
 
+"@rngstudio/flip@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@rngstudio/flip/-/flip-1.0.8.tgz#950e347f1a79aa41ffb2d021c4fc4446706d4dd3"
+  integrity sha512-18w6B2PnTsolAgljgGSqeDhIYoHlHgoQD3Py1juewz00UFyavU4nOmnhqWfrTPRXOGHYFVWQqLClnWy3BEtuxQ==
+  dependencies:
+    bn.js "^5.2.0"
+    borsh "^0.7.0"
+
 "@rushstack/eslint-patch@^1.0.6":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
