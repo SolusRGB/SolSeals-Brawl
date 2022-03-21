@@ -32,7 +32,15 @@ p {
   color: #ffffff;
 }
 
+/* Main containers that hold everything */
+
 #bananos > .container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.main-content {
   max-width: 980px;
   margin: 0 auto;
   margin-top: 100px;
@@ -54,6 +62,10 @@ p {
 }
 
 /** Buttons */
+
+/* Gambling helpline button */
+
+
 
 /* Solana bet buttons with numbers */
 .bet {

@@ -73,7 +73,7 @@ export const Faq = () => {
               </p>
               <span className="help-link">
                 Gambling Helpline:{" "}
-                <a href="https://www.ncpgambling.org/chat/">
+                <a className="nes-btn is-success" href="https://www.ncpgambling.org/chat/">
                   ncpgambling.org/chat
                 </a>
               </span>
