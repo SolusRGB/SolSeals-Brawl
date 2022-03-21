@@ -8,13 +8,7 @@ import { FlipProvider } from "../flip-lib";
 export const NotFound = () => {
   return (
     <body className="main-content">
-      <div className="not-found">
-        {/* <FlipProvider
-          partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
-          network={process.env.NEXT_PUBLIC_NETWORK}
-        >
-          <Header />
-        </FlipProvider> */}
+      <div className="nes-container with-title is-centered is-rounded">
         <Image
           className="faq-icon"
           alt="Sailor-Seal"
@@ -25,10 +19,10 @@ export const NotFound = () => {
         />
         <h1>Oops... Arp...</h1>
         <h2>That page cannot be found.</h2>
-        <p>
+        <p id="lost-button">
           Go back to the{" "}
           <Link href="/">
-            <a>Homepage</a>
+            <a className="nes-btn is-success">Homepage</a>
           </Link>
         </p>
       </div>

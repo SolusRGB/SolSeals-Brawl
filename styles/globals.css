@@ -75,6 +75,12 @@ p {
 
 /** Buttons */
 
+/* 404 lost homepage button */
+
+#lost-button {
+  text-align: center;
+}
+
 /* Solana bet buttons with numbers */
 .bet {
   color: rgb(0, 0, 0) !important;
@@ -755,9 +761,5 @@ img.lazy {
 .not-found {
   text-align: center;
   margin: auto;
-}
-
-.not-found a {
-  color: #113c5a;
-  text-decoration: underline;
+  background-color: #113c5aad;
 }
