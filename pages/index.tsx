@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import { Header } from "../components/navigation/Header";
 import { Main } from "../components/bet/Main";
-import { FlipProvider } from "../flip-lib";
+import { FlipProvider } from "@rngstudio/flip";
 
 const Index: NextPage = () => {
   return (
