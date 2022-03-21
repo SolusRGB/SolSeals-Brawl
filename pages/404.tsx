@@ -9,12 +9,12 @@ export const NotFound = () => {
   return (
     <body className="main-content">
       <div className="not-found">
-        <FlipProvider
+        {/* <FlipProvider
           partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
           network={process.env.NEXT_PUBLIC_NETWORK}
         >
           <Header />
-        </FlipProvider>
+        </FlipProvider> */}
         <Image
           className="faq-icon"
           alt="Sailor-Seal"

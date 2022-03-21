@@ -10,14 +10,14 @@ export const Faq = () => {
   return (
     <body className="main-content">
       <div className="nes-container with-title is-centered is-rounded is-faq">
-        <WalletConnectionProvider>
+        {/* <WalletConnectionProvider>
           <FlipProvider
             partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
             network={process.env.NEXT_PUBLIC_NETWORK}
           >
             <Header />
           </FlipProvider>
-        </WalletConnectionProvider>
+        </WalletConnectionProvider> */}
         <h1>
           <Image
             className="faq-icon"
