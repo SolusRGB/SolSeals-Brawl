@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Header } from "../components/navigation/Header";
-import { FlipProvider } from "../flip-lib";
 
 //! FIND A BETTER WAY TO LAYOUT PAGES WITH FLIPPROVIDER AND HEADER FOR EACH PAGE
 
