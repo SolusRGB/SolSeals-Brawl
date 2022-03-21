@@ -1,4 +1,4 @@
-import { useBalance } from "../../flip-lib";
+import { useBalance } from "@rngstudio/flip";
 import { useWallet } from "@solana/wallet-adapter-react";
 
 export const Balance = () => {

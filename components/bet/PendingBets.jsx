@@ -1,7 +1,7 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { fromUnixTime, formatRelative } from "date-fns";
-import { usePendingBets } from "../../flip-lib";
+import { usePendingBets } from "@rngstudio/flip";
 
 const PendingBet = ({ bet }) => {
   return (

@@ -1,4 +1,4 @@
-import { useLoading } from "../../flip-lib";
+import { useLoading } from "@rngstudio/flip";
 
 import styles from "./Loading.module.css";
 

@@ -1,7 +1,7 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { fromUnixTime, formatRelative } from "date-fns";
-import { useBets, collect } from "../../flip-lib";
+import { useBets, collect } from "@rngstudio/flip";
 
 const Result = ({ bet }) => {
   const wallet = useWallet();
