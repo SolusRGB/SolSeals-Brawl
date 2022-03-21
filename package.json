@@ -24,6 +24,7 @@
     },
     "dependencies": {
         "@16bits/nes.css": "^2.3.2",
+        "@rngstudio/flip": "^1.0.8",
         "@solana/wallet-adapter-base": "^0.9.0",
         "@solana/wallet-adapter-react": "^0.15.0",
         "@solana/wallet-adapter-react-ui": "^0.9.0",
