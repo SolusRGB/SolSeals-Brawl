@@ -7,30 +7,32 @@ import { FlipProvider } from "../flip-lib";
 
 export const NotFound = () => {
   return (
-    <div className="not-found">
-      <FlipProvider
-        partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
-        network={process.env.NEXT_PUBLIC_NETWORK}
-      >
-        <Header />
-      </FlipProvider>
-      <Image
-        className="faq-icon"
-        alt="Sailor-Seal"
-        src="/images/Seals/seal-3-left.png"
-        width={100}
-        height={100}
-        layout="fixed"
-      />
-      <h1>Oops... Arp...</h1>
-      <h2>That page cannot be found.</h2>
-      <p>
-        Go back to the{" "}
-        <Link href="/">
-          <a>Homepage</a>
-        </Link>
-      </p>
-    </div>
+    <body className="main-content">
+      <div className="not-found">
+        <FlipProvider
+          partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
+          network={process.env.NEXT_PUBLIC_NETWORK}
+        >
+          <Header />
+        </FlipProvider>
+        <Image
+          className="faq-icon"
+          alt="Sailor-Seal"
+          src="/images/Seals/seal-3-left.png"
+          width={100}
+          height={100}
+          layout="fixed"
+        />
+        <h1>Oops... Arp...</h1>
+        <h2>That page cannot be found.</h2>
+        <p>
+          Go back to the{" "}
+          <Link href="/">
+            <a>Homepage</a>
+          </Link>
+        </p>
+      </div>
+    </body>
   );
 };
 

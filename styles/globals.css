@@ -250,11 +250,12 @@ header.sticky .nav-brand p {
   font-size: 0.6rem;
 }
 
-/* Main */
+/* Main bodies for each page */
 .main-content {
   margin-bottom: 2rem;
   margin-top: 130px;
 }
+
 
 /* Footer */
 footer {
