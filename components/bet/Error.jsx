@@ -2,7 +2,7 @@ import { Dialog } from "react-dialog-polyfill";
 import { errors } from '../../scripts';
 import Image from 'next/image';
 
-import { useError, closeError } from "../../flip-lib";
+import { useError, closeError } from "@rngstudio/flip";
 
 const Message = ({ script }) => {
   const { side, message, icon } = script;

@@ -10,7 +10,7 @@ import { Welcome } from "./Welcome";
 import { Disclaimer } from "./Disclaimer";
 // import { whitelist } from "../../whitelist";
 import { useCookies } from "react-cookie";
-import { FlipInitializer } from "../../flip-lib";
+import { FlipInitializer } from "@rngstudio/flip";
 
 export const Main = () => {
   const [cookies, setCookie] = useCookies(["agreedToDisclaimer"]);

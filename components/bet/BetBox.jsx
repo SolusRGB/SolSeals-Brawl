@@ -3,7 +3,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import BN from "bn.js";
-import { usePendingBets, createBet } from "../../flip-lib";
+import { usePendingBets, createBet } from "@rngstudio/flip";
 
 export const BetBox = () => {
   const pendingBets = usePendingBets();

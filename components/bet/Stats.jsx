@@ -1,7 +1,7 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
-import { useBets } from "../../flip-lib";
+import { useBets } from "@rngstudio/flip";
 
 export const Stats = () => {
   const wallet = useWallet();

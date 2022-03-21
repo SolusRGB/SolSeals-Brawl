@@ -4,7 +4,7 @@ import { Dialog } from "react-dialog-polyfill";
 import { winMessages, lossMessages } from "../../scripts";
 import Image from "next/image";
 
-import { useDisplayBet, collect, closeDisplayBet } from "../../flip-lib";
+import { useDisplayBet, collect, closeDisplayBet } from "@rngstudio/flip";
 
 const Message = ({ script }) => {
   const { side, message, icon } = script;
