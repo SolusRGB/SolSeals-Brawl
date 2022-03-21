@@ -32,6 +32,11 @@ p {
   color: #ffffff;
 }
 
+/* .trust h3 {
+  background-color: #113c5a;
+  border-radius: 10px;
+} */
+
 /* Main containers that hold everything */
 
 #bananos > .container {
@@ -44,6 +49,18 @@ p {
   max-width: 980px;
   margin: 0 auto;
   margin-top: 100px;
+}
+
+.main-content p{
+  text-align: justify;
+  padding: .5rem;
+}
+
+/* FAQ titles */
+.main-content h3 {
+  background-color: #113c5a;
+  border-radius: 10px;
+  padding: .5rem;
 }
 
 /* Nes containers that hold content */
@@ -62,10 +79,6 @@ p {
 }
 
 /** Buttons */
-
-/* Gambling helpline button */
-
-
 
 /* Solana bet buttons with numbers */
 .bet {

@@ -10,14 +10,6 @@ export const Faq = () => {
   return (
     <body className="main-content">
       <div className="nes-container with-title is-centered is-rounded is-faq">
-        {/* <WalletConnectionProvider>
-          <FlipProvider
-            partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
-            network={process.env.NEXT_PUBLIC_NETWORK}
-          >
-            <Header />
-          </FlipProvider>
-        </WalletConnectionProvider> */}
         <h1>
           <Image
             className="faq-icon"
@@ -42,7 +34,7 @@ export const Faq = () => {
               compromised.
             </p>
           </section>
-          <div className="instant-results">
+          <div className="trust">
             <section>
               <h3>Why are my results not always instant?</h3>
               <p>
