@@ -1,8 +1,21 @@
 import Image from "next/image";
+import { Header } from "../components/navigation/Header";
+import { WalletConnectionProvider } from "../components/WalletConnectionProvider";
+import { FlipProvider } from "../flip-lib";
+
+//! FIND A BETTER WAY TO LAYOUT PAGES WITH FLIPPROVIDER AND HEADER FOR EACH PAGE
 
 export const Faq = () => {
   return (
     <div className="nes-container with-title is-centered is-rounded is-faq">
+      <WalletConnectionProvider>
+      <FlipProvider
+        partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
+        network={process.env.NEXT_PUBLIC_NETWORK}
+      >
+        <Header />
+      </FlipProvider>
+      </WalletConnectionProvider>
       <h1>
         <Image
           className="faq-icon"

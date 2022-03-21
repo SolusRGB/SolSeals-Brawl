@@ -1,9 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Header } from "../components/navigation/Header";
+import { FlipProvider } from "../flip-lib";
+
+//! FIND A BETTER WAY TO LAYOUT PAGES WITH FLIPPROVIDER AND HEADER FOR EACH PAGE
 
 export const NotFound = () => {
   return (
     <div className="not-found">
+      <FlipProvider
+        partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
+        network={process.env.NEXT_PUBLIC_NETWORK}
+      >
+        <Header />
+      </FlipProvider>
       <Image
         className="faq-icon"
         alt="Sailor-Seal"
