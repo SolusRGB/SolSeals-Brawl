@@ -32,11 +32,6 @@ p {
   color: #ffffff;
 }
 
-/* .trust h3 {
-  background-color: #113c5a;
-  border-radius: 10px;
-} */
-
 /* Main containers that hold everything */
 
 #bananos > .container {
@@ -51,16 +46,16 @@ p {
   margin-top: 100px;
 }
 
-.main-content p{
+.main-content p {
   text-align: justify;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 /* FAQ titles */
 .main-content h3 {
   background-color: #113c5a;
   border-radius: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 /* Nes containers that hold content */
@@ -280,7 +275,6 @@ header.sticky .nav-brand p {
   margin-bottom: 2rem;
   margin-top: 130px;
 }
-
 
 /* Footer */
 footer {
