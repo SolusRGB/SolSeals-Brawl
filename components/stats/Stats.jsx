@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useConnection } from "@solana/wallet-adapter-react";
 import { PublicKey, LAMPORTS_PER_SOL } from "@solana/web3.js";
-import { Bet } from "../../flip-lib/classes/Bet";
+import { Bet } from "@rngstudio/flip/classes/Bet";
 import { deserialize } from "borsh";
 import BN from "bn.js";
 
