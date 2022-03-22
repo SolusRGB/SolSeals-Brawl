@@ -64,6 +64,11 @@ p {
   margin-bottom: 1px;
 }
 
+/* Dialogue pop up box */
+.nes-dialog.is-rounded.win-loss {
+  background-color: #113c5adc;
+}
+
 .nes-container.is-centered.is-rounded {
   margin-bottom: 15px;
   margin-top: 15px;
