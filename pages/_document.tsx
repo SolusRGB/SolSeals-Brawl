@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/navigation/Header";
-import { FlipProvider } from "../flip-lib";
+import { FlipProvider } from "@rngstudio/flip";
 
 export default function Document() {
   return (
