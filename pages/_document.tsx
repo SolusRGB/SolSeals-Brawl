@@ -13,7 +13,7 @@ export default function Document() {
         />
       </Head>
       <body>
-      <FlipProvider
+        <FlipProvider
           partnerId="5fVWRf1AAhMkrr8mYbej8NjYQkzcz7uTmkoNiW9Wp5M5"
           network={process.env.NEXT_PUBLIC_NETWORK}
         >
