@@ -1,6 +1,4 @@
-This is a preview application of Road Rugger with included Partner Support.
-
-In the future This will be ported to a library so that you don't have to work inside this messy repo.
+This was a casino game I build on Solana.
 
 To run locally:
 Ensure you have Node.JS installed and have yarn.
